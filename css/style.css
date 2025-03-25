@@ -70,9 +70,36 @@ section{
 }
 
 #txt-ini{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family:"Montserrat", sans-serif;
     font-size: 35px;
     color: rgb(31, 30, 97);
+}
+#txt-ini img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+#txt-ini button{
+    margin-top: 20px;
+    width: 180px;
+    height: 50px;
+    background-color:#ff97bd;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#txt-ini button:hover{
+    background-color:#f45e95;
+    transform: scale(1.1);
 }
 
 #txt-img{
@@ -96,6 +123,7 @@ section{
 
 #txt-ini hr{
     height: 2px;
+    width: 100%;
     background-color: rgb(31, 30, 97);
     border: none;
     margin-bottom: 5px;
